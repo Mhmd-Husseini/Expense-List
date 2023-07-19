@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div>
+      <h1>EXPENSE SHEET</h1>
+    <form>
+        <label for="input_name"> Expense Name</label>
+        <input id="input_name" type="text" placeholder="Enter name"><br>
+        <label for="input_name"> Expense Ammount</label>
+        <input id="input_expense" type="number" placeholder="Enter price">
+    </form>
+        <button id="add_btn">ADD</button><br><br><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Expense Name</th>
+            <th>Expense Ammount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="expenseList">
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><strong>Total:</strong></td>
+            <td id="totalSum"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
